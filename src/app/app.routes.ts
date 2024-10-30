@@ -1,3 +1,19 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+
+
+import { EscuelaFormComponent } from './escuela-form/escuela-form.component';
+
+export const routes: Routes = [
+    {
+        path : '',
+        component: EscuelaFormComponent,
+        title:"pagina de inicio"
+    },
+
+    {
+        path : '**',
+        redirectTo: '',
+        pathMatch:"full"
+    },
+];

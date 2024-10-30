@@ -1,0 +1,12 @@
+
+<div class="container d-flex flex-row mt-5 justify-content-between">
+    <div *ngFor="let item of escuelas" class="card" style="width: 18rem;">
+
+        <div class="card-body">
+        <h5 class="card-title">{{item.nombre}} </h5>
+        <p class="card-text">{{item.facultadid}}</p>
+        <a href="#" class="btn btn-primary">Editar</a>
+        </div>
+    </div>
+  
+</div>

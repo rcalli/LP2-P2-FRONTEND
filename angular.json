@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "escuela-crud": {
+    "app-biblio-02": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -12,8 +12,9 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
+          
           "options": {
-            "outputPath": "dist/escuela-crud",
+            "outputPath": "dist/app-biblio-02",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,10 +28,16 @@
               }
             ],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+  "src/styles.css"
+
+],
+
+            "scripts": [
+              
+            ]
+            
           },
+          
           "configurations": {
             "production": {
               "budgets": [
@@ -59,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "escuela-crud:build:production"
+              "buildTarget": "app-biblio-02:build:production"
             },
             "development": {
-              "buildTarget": "escuela-crud:build:development"
+              "buildTarget": "app-biblio-02:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
